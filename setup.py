@@ -8,6 +8,7 @@ setup(
         "requests",
         "anthropic",  # For Claude API
         "google-generativeai",  # For Gemini API
+        "openai",  # For GPT-4o API
         "rich",  # For terminal styling
         "pyyaml",
         "click",

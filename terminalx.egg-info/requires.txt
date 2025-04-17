@@ -1,6 +1,7 @@
 requests
 anthropic
 google-generativeai
+openai
 rich
 pyyaml
 click
