@@ -6,16 +6,40 @@ A natural language terminal command assistant that translates English instructio
 
 - Translate natural language into shell commands using AI
 - Execute generated commands with confirmation
-- Support for multiple LLM providers (Claude, Gemini)
+- Support for multiple LLM providers (Claude, Gemini, GPT-4o)
 - Command history tracking
 - Direct command execution with '!' prefix
 
 ## Installation
 
+### Easy Installation (Recommended)
+
 ```bash
 # Clone the repository
 git clone https://github.com/yourusername/terminal-x.git
 cd terminal-x
+
+# Run the installer script
+python install.py
+```
+
+This will:
+1. Create a virtual environment at ~/.terminalx-venv
+2. Install all required dependencies
+3. Create a shortcut at ~/bin/terminalx
+
+### Manual Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/terminal-x.git
+cd terminal-x
+
+# Create a virtual environment
+python -m venv .venv
+
+# Activate the virtual environment
+source .venv/bin/activate
 
 # Install the package
 pip install -e .
@@ -25,10 +49,10 @@ pip install -e .
 
 ```bash
 # Start Terminal X
-terminal
+terminalx
 
 # Reset configuration
-terminal --reset
+terminalx --reset
 ```
 
 ## Examples
@@ -44,7 +68,7 @@ Do you want to execute this command? [y/N]: y
 ## Requirements
 
 - Python 3.7+
-- An API key for Claude or Gemini
+- An API key for Claude, Gemini, or GPT-4o
 
 ## License
 

@@ -16,13 +16,26 @@ from .utils import execute_command, is_first_run, get_terminal_size
 console = Console()
 
 def show_welcome_screen():
-    """Display a stylish welcome screen."""
+    """Display a stylish welcome screen with ASCII art."""
     console.print("\n")
-    welcome_text = Text("🚀 Welcome to Terminal X 🚀", style="bold cyan")
-    subtitle = Text("Natural Language Terminal Command Assistant", style="italic green")
+    
+    # ASCII art for Terminal X
+    terminal_x_ascii = r"""
+    ████████╗███████╗██████╗ ███╗   ███╗██╗███╗   ██╗ █████╗ ██╗         ██╗  ██╗
+    ╚══██╔══╝██╔════╝██╔══██╗████╗ ████║██║████╗  ██║██╔══██╗██║         ╚██╗██╔╝
+       ██║   █████╗  ██████╔╝██╔████╔██║██║██╔██╗ ██║███████║██║          ╚███╔╝ 
+       ██║   ██╔══╝  ██╔══██╗██║╚██╔╝██║██║██║╚██╗██║██╔══██║██║          ██╔██╗ 
+       ██║   ███████╗██║  ██║██║ ╚═╝ ██║██║██║ ╚████║██║  ██║███████╗    ██╔╝ ██╗
+       ╚═╝   ╚══════╝╚═╝  ╚═╝╚═╝     ╚═╝╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝╚══════╝    ╚═╝  ╚═╝
+    """
+    
+    console.print(terminal_x_ascii, style="cyan bold")
+    
+    welcome_text = Text("Natural Language Terminal Command Assistant", style="italic green")
+    version_text = Text("v0.1.0", style="dim")
     
     console.print(Panel.fit(
-        welcome_text + "\n\n" + subtitle,
+        welcome_text + "\n\n" + version_text,
         border_style="bright_blue",
         padding=(1, 4)
     ))
