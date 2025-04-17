@@ -1,0 +1,13 @@
+README.md
+setup.py
+terminalx/__init__.py
+terminalx/config.py
+terminalx/llm.py
+terminalx/main.py
+terminalx/utils.py
+terminalx.egg-info/PKG-INFO
+terminalx.egg-info/SOURCES.txt
+terminalx.egg-info/dependency_links.txt
+terminalx.egg-info/entry_points.txt
+terminalx.egg-info/requires.txt
+terminalx.egg-info/top_level.txt

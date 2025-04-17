@@ -1,0 +1,6 @@
+requests
+anthropic
+google-generativeai
+rich
+pyyaml
+click
